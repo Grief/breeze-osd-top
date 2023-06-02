@@ -11,8 +11,10 @@ import org.kde.plasma.extras 2.0 as PlasmaExtra
 
 PlasmaCore.Dialog {
     id: root
-    location: PlasmaCore.Types.Floating
-    type: PlasmaCore.Dialog.OnScreenDisplay
+    type: PlasmaCore.Dialog.Tooltip
+    location: PlasmaCore.Types.TopEdge
+    x: Math.round((Screen.width - width) / 2)
+    y: 0
     outputOnly: true
 
     property alias timeout: osd.timeout
