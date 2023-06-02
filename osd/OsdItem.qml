@@ -26,10 +26,10 @@ RowLayout {
     // false for displaying the value as normal text
     property bool showingProgress: false
 
-    spacing: PlasmaCore.Units.smallSpacing
+    spacing: PlasmaCore.Units.mediumSpacing
 
     Layout.preferredWidth: Math.max(Math.min(Screen.desktopAvailableWidth / 2, implicitWidth), PlasmaCore.Units.gridUnit * 15)
-    Layout.preferredHeight: PlasmaCore.Units.iconSizes.medium
+    Layout.preferredHeight: PlasmaCore.Units.iconSizes.smallMedium
     Layout.minimumWidth: Layout.preferredWidth
     Layout.minimumHeight: Layout.preferredHeight
     Layout.maximumWidth: Layout.preferredWidth
@@ -38,9 +38,9 @@ RowLayout {
     height: Layout.preferredHeight
 
     PlasmaCore.IconItem {
-        Layout.leftMargin: PlasmaCore.Units.smallSpacing
-        Layout.preferredWidth: PlasmaCore.Units.iconSizes.medium
-        Layout.preferredHeight: PlasmaCore.Units.iconSizes.medium
+        Layout.leftMargin: PlasmaCore.Units.mediumSpacing
+        Layout.preferredWidth: PlasmaCore.Units.iconSizes.smallMedium
+        Layout.preferredHeight: PlasmaCore.Units.iconSizes.smallMedium
         Layout.alignment: Qt.AlignVCenter
         source: icon
         visible: valid
@@ -52,7 +52,7 @@ RowLayout {
         Layout.alignment: Qt.AlignVCenter
         // So it never exceeds the minimum popup size
         Layout.minimumWidth: 0
-        Layout.rightMargin: PlasmaCore.Units.smallSpacing
+        Layout.rightMargin: PlasmaCore.Units.mediumSpacing
         visible: showingProgress
         from: 0
         to: osdMaxValue
@@ -72,7 +72,7 @@ RowLayout {
         id: percentageLabel
         Layout.fillHeight: true
         Layout.preferredWidth: widestLabelSize.width
-        Layout.rightMargin: PlasmaCore.Units.smallSpacing
+        Layout.rightMargin: PlasmaCore.Units.mediumSpacing
         Layout.alignment: Qt.AlignVCenter
         level: 3
         horizontalAlignment: Text.AlignHCenter
@@ -99,7 +99,7 @@ RowLayout {
         id: label
         Layout.fillWidth: true
         Layout.fillHeight: true
-        Layout.rightMargin: PlasmaCore.Units.smallSpacing
+        Layout.rightMargin: PlasmaCore.Units.mediumSpacing
         Layout.alignment: Qt.AlignVCenter
         level: 3
         horizontalAlignment: Text.AlignHCenter
