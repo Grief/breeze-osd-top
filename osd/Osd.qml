@@ -4,17 +4,12 @@
     SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-import QtQuick 2.0
-import QtQuick.Window 2.2
-import org.kde.plasma.core 2.0 as PlasmaCore
-import org.kde.plasma.extras 2.0 as PlasmaExtra
+import QtQuick
+import org.kde.plasma.core as PlasmaCore
 
 PlasmaCore.Dialog {
-    id: root
-    type: PlasmaCore.Dialog.Tooltip
-    location: PlasmaCore.Types.TopEdge
-    x: Math.round((Screen.width - width) / 2)
-    y: 0
+    location: PlasmaCore.Types.Floating
+    type: PlasmaCore.Dialog.OnScreenDisplay
     outputOnly: true
 
     property alias timeout: osd.timeout
