@@ -32,10 +32,10 @@ RowLayout {
         return i18ndc("plasma_lookandfeel_org.kde.lookandfeel", "Percentage value", "%1%", number);
     }
 
-    spacing: Kirigami.Units.largeSpacing
+    spacing: Kirigami.Units.mediumSpacing
 
     Layout.preferredWidth: Math.max(Math.min(Screen.desktopAvailableWidth / 2, implicitWidth), Kirigami.Units.gridUnit * 15)
-    Layout.preferredHeight: Kirigami.Units.iconSizes.medium
+    Layout.preferredHeight: Kirigami.Units.iconSizes.smallMedium
     Layout.minimumWidth: Layout.preferredWidth
     Layout.minimumHeight: Layout.preferredHeight
     Layout.maximumWidth: Layout.preferredWidth
@@ -46,8 +46,8 @@ RowLayout {
     Kirigami.Icon {
         id: iconItem
         Layout.leftMargin: Kirigami.Units.smallSpacing // Left end spacing
-        Layout.preferredWidth: Kirigami.Units.iconSizes.medium
-        Layout.preferredHeight: Kirigami.Units.iconSizes.medium
+        Layout.preferredWidth: Kirigami.Units.iconSizes.smallMedium
+        Layout.preferredHeight: Kirigami.Units.iconSizes.smallMedium
         Layout.alignment: Qt.AlignVCenter
         source: root.icon
         visible: valid
