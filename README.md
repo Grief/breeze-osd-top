@@ -11,6 +11,8 @@ Run `./install.sh install` to back up original files and install.
 
 Run `.install.sh restore` to restore the backup.
 
+Run `.install.sh forget` to delete the backup.
+
 Original look and position:
 ![](screenshots/original.png)
 Modified look and position:

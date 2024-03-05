@@ -32,7 +32,7 @@ RowLayout {
         return i18ndc("plasma_lookandfeel_org.kde.lookandfeel", "Percentage value", "%1%", number);
     }
 
-    spacing: Kirigami.Units.mediumSpacing
+    spacing: Kirigami.Units.smallSpacing
 
     Layout.preferredWidth: Math.max(Math.min(Screen.desktopAvailableWidth / 2, implicitWidth), Kirigami.Units.gridUnit * 15)
     Layout.preferredHeight: Kirigami.Units.iconSizes.smallMedium

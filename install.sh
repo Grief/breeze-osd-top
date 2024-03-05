@@ -23,8 +23,16 @@ case "$1" in
     sudo rm -rf "${target}"
     sudo mv "${backup}" "${target}"
     ;;
+  'forget')
+      if [ ! -d "${backup}" ]; then
+         echo "breeze-os-top is not installed"
+         exit 1
+      fi
+      sudo rm -rf "${backup}"
+      exit 0
+      ;;
   *)
-    echo "Usage: $0 install | restore"
+    echo "Usage: $0 install | restore | forget"
     exit 0
 esac
 
