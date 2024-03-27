@@ -1,0 +1,12 @@
+diff --git a/osd/Osd.qml b/osd/Osd.qml
+--- a/Osd.qml	(revision dc2b19230050411348b362d5e6e72edf01941b4e)
++++ b/Osd.qml	(date 1711531555687)
+@@ -11,7 +11,7 @@
+     type: PlasmaCore.Dialog.Tooltip
+     location: PlasmaCore.Types.TopEdge
+     x: Math.round((Screen.width - width) / 2)
+-    y: 0
++    y: Screen.height - height
+     outputOnly: true
+
+     property alias timeout: osd.timeout
